@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="App">
       {/* <GermanNouns /> */}
-      <GermanNouns article="das" />
-      <GermanNouns article="die" />
-      <GermanNouns article="der" />
+      <GermanNouns article="das" number={10} />
+      <GermanNouns article="die" number={15} />
+      <GermanNouns article="der" number={20} />
     </div>
   );
 }

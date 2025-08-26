@@ -30,10 +30,16 @@ function shuffle(array) {
 // console.log(arr);
 // console.log(germanNoun);
 
-export const GermanNouns = ({ article }) => {
+export const GermanNouns = ({ article, number }) => {
+  // To set the type of every article
   const germanNouns = shuffle(_germanNouns).filter(
     (d) => d.article === article
   );
+
+  // To set the number of every article
+  console.log(number);
+  germanNouns.length = germanNouns.length - (germanNouns.length - number);
+
   return (
     <>
       <h1>German Nouns</h1>

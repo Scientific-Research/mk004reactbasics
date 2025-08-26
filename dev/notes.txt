@@ -5,8 +5,8 @@
             - die Form
             - die Formen
   - x display images
-  - .. components
 - more complicated
+  - x components
   - load data from an API
     - useState, useEffect
   - React Router
