@@ -1,6 +1,6 @@
 - low hanging fruit
-  - install Sass
-  - data-driven site with JSON file => Read-Only-Datenbank
+  - x install Sass
+  - .. data-driven site with JSON file => Read-Only-Datenbank
   - display images
   - components
 - more complicated
