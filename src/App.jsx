@@ -4,15 +4,13 @@ import germanNoun from './data/germanNouns.json';
 function App() {
   return (
     <div className="App">
-      {/* {germanNoun.forEach((n) => {
-        console.log(n);
-      })} */}
-
+      <h1>German Nouns</h1>
+      <h3>There are {germanNoun.length} German nouns in the JSON data!</h3>
       {germanNoun.map((n) => (
-        <div key={n.singular}>
-          <p>article: {n.article}</p>
-          <p>singular: {n.singular}</p>
-          <p>plural: {n.plural}</p>
+        <div className="germanNouns" key={n.singular}>
+          <p className="germanNoun">article: {n.article}</p>
+          <p className="germanNoun">singular: {n.singular}</p>
+          <p className="germanNoun">plural: {n.plural}</p>
         </div>
       ))}
     </div>

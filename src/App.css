@@ -8,4 +8,15 @@ body {
   h1 {
     color: rgb(224, 224, 149);
   }
+
+  h3 {
+    color: red;
+  }
+
+  .germanNouns {
+    .germanNoun {
+      background-color: #222;
+      padding: 1rem;
+    }
+  }
 }
