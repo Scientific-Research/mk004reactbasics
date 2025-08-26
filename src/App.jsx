@@ -1,4 +1,5 @@
 import './App.css';
+import { GermanNouns } from './components/GermanNouns';
 import _germanNouns from './data/germanNouns.json';
 
 // How to produce a random number in Javascript:
@@ -36,17 +37,8 @@ function App() {
     <div className="App">
       <h1>German Nouns</h1>
       <h3>There are {germanNouns.length} German nouns in the JSON data!</h3>
-      {germanNouns.map((n) => (
-        <div className="germanNouns" key={n.singular}>
-          <img src="/images/cardback2.png" alt="" />
-          <div>
-            <p className="singular">
-              {n.article} {n.singular}
-            </p>
-            <p className="plural">{n.plural}</p>
-          </div>
-        </div>
-      ))}
+
+      <GermanNouns GermanNouns={germanNouns} />
     </div>
   );
 }
