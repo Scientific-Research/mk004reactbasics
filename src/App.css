@@ -3,4 +3,9 @@ body {
   color: #ccc;
   font-family: sans-serif;
   padding: 0 1rem;
+
+  /* Saas is a built-in Feature, we don't need to install it anymore as npm i sass  */
+  h1 {
+    color: rgb(224, 224, 149);
+  }
 }

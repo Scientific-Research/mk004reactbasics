@@ -1,0 +1,9 @@
+- low hanging fruit
+  - install Sass
+  - data-driven site with JSON file => Read-Only-Datenbank
+  - display images
+  - components
+- more complicated
+  - load data from an API
+    - useState, useEffect
+  - React Router
