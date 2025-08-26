@@ -37,16 +37,22 @@ export const GermanNouns = ({ article, number }) => {
   );
 
   // To set the number of every article
-  console.log(number);
-  germanNouns.length = germanNouns.length - (germanNouns.length - number);
+  // 20 < 46
+  if (number < germanNouns.length) {
+    germanNouns.length = germanNouns.length - (germanNouns.length - number);
+    console.log(germanNouns.length);
+  } else {
+    // 200 > 46 => real length will be displayed!
+    console.log(germanNouns.length);
+  }
 
   return (
     <>
       <h1>German Nouns</h1>
       <h3>
-        There are <span className="length">{germanNouns.length}</span> German
-        nouns for article <span className="article">"{article}"</span> in the
-        JSON data!
+        There are <span className="length">{germanNouns.length}</span> random
+        German nouns for article <span className="article">"{article}"</span>{' '}
+        from the JSON data!
       </h3>
       {germanNouns.map((n) => (
         <div className="germanNouns" key={n.singular}>
