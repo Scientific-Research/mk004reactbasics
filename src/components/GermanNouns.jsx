@@ -25,12 +25,15 @@ function shuffle(array) {
 // const germanNouns = shuffle(_germanNouns);
 
 //SELECT ONLY THE NOUNS WITH ARTICLE der => using filter method
-const germanNouns = shuffle(_germanNouns).filter((d) => d.article === 'der');
+// const germanNouns = shuffle(_germanNouns).filter((d) => d.article === 'der');
 // shuffle(germanNoun);
 // console.log(arr);
 // console.log(germanNoun);
 
-export const GermanNouns = () => {
+export const GermanNouns = ({ article }) => {
+  const germanNouns = shuffle(_germanNouns).filter(
+    (d) => d.article === article
+  );
   return (
     <>
       <h1>German Nouns</h1>
@@ -46,7 +49,6 @@ export const GermanNouns = () => {
           </div>
         </div>
       ))}
-      ;
     </>
   );
 };
