@@ -35,8 +35,7 @@ const germanNouns = shuffle(_germanNouns).filter((d) => d.article === 'der');
 function App() {
   return (
     <div className="App">
-      <h1>German Nouns</h1>
-      <h3>There are {germanNouns.length} German nouns in the JSON data!</h3>
+     
 
       <GermanNouns GermanNouns={germanNouns} />
     </div>
