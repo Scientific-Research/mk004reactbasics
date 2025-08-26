@@ -1,5 +1,5 @@
 import './App.css';
-import germanNoun from './data/germanNouns.json';
+import _germanNouns from './data/germanNouns.json';
 
 // How to produce a random number in Javascript:
 function shuffle(array) {
@@ -17,13 +17,14 @@ function shuffle(array) {
       array[currentIndex],
     ];
   }
+  return array;
 }
 
 // Used like so
 // let arr = [2, 11, 37, 42];
 // shuffle(arr);
-// const randomizedNoun = shuffle(germanNoun);
-shuffle(germanNoun);
+const germanNouns = shuffle(_germanNouns);
+// shuffle(germanNoun);
 // console.log(arr);
 // console.log(germanNoun);
 
@@ -31,9 +32,8 @@ function App() {
   return (
     <div className="App">
       <h1>German Nouns</h1>
-      <h3>There are {germanNoun.length} German nouns in the JSON data!</h3>
-      {/* {randomizedNoun.map((n) => ( */}
-      {germanNoun.map((n) => (
+      <h3>There are {germanNouns.length} German nouns in the JSON data!</h3>
+      {germanNouns.map((n) => (
         <div className="germanNouns" key={n.singular}>
           <p className="singular">
             {n.article} {n.singular}
