@@ -23,7 +23,10 @@ function shuffle(array) {
 // Used like so
 // let arr = [2, 11, 37, 42];
 // shuffle(arr);
-const germanNouns = shuffle(_germanNouns);
+// const germanNouns = shuffle(_germanNouns);
+
+//SELECT ONLY THE NOUNS WITH ARTICLE der => using filter method
+const germanNouns = shuffle(_germanNouns).filter((d) => d.article === 'der');
 // shuffle(germanNoun);
 // console.log(arr);
 // console.log(germanNoun);
