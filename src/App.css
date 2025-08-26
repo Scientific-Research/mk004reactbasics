@@ -19,7 +19,7 @@ body {
   }
 
   h3 {
-    color: red;
+    color: rgb(13, 218, 81);
     margin-bottom: 2rem;
     margin-left: 1rem;
   }
@@ -28,6 +28,12 @@ body {
     background-color: #222;
     padding: 1rem;
     margin: 1rem;
+    display: flex;
+    gap: 1rem;
+
+    img {
+      width: 6rem;
+    }
 
     .singular {
       color: rgb(228, 179, 87);

@@ -38,6 +38,7 @@ function App() {
       <h3>There are {germanNouns.length} German nouns in the JSON data!</h3>
       {germanNouns.map((n) => (
         <div className="germanNouns" key={n.singular}>
+          <img src="/public/images/cardback2.png" alt="" />
           <p className="singular">
             {n.article} {n.singular}
           </p>
