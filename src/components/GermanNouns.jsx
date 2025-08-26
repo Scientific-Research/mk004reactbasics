@@ -37,7 +37,10 @@ export const GermanNouns = ({ article }) => {
   return (
     <>
       <h1>German Nouns</h1>
-      <h3>There are {germanNouns.length} German nouns in the JSON data!</h3>
+      <h3>
+        There are {germanNouns.length} German nouns for article{' '}
+        <span className="article">"{article}"</span> in the JSON data!
+      </h3>
       {germanNouns.map((n) => (
         <div className="germanNouns" key={n.singular}>
           <img src="/images/cardback2.png" alt="" />
