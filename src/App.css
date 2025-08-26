@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #333;
   color: #ccc;
@@ -14,9 +20,8 @@ body {
   }
 
   .germanNouns {
-    .germanNoun {
-      background-color: #222;
-      padding: 1rem;
-    }
+    background-color: #222;
+    padding: 1rem;
+    margin: 1rem;
   }
 }

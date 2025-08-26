@@ -8,9 +8,10 @@ function App() {
       <h3>There are {germanNoun.length} German nouns in the JSON data!</h3>
       {germanNoun.map((n) => (
         <div className="germanNouns" key={n.singular}>
-          <p className="germanNoun">article: {n.article}</p>
-          <p className="germanNoun">singular: {n.singular}</p>
-          <p className="germanNoun">plural: {n.plural}</p>
+          <p>
+            {n.article} {n.singular}
+          </p>
+          <p>{n.plural}</p>
         </div>
       ))}
     </div>
